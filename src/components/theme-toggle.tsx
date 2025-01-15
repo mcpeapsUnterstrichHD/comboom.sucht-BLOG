@@ -11,13 +11,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme();
+  const { theme, systemTheme, setTheme } = useTheme(); // Get the current theme
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="rounded-full bg-transparent backdrop-blur-sm"
+          className="rounded-full bg-transparent backdrop-blur-sm flex items-center"
           variant="outline"
           size="icon"
         >
@@ -30,15 +30,36 @@ export function ThemeToggle() {
         className="bg-transparent backdrop-blur-sm"
         align="end"
       >
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
+        {theme === "system" && systemTheme === "light" && (
+          <DropdownMenuItem onClick={() => setTheme("dark")} className="hover:underline hover:font-bold">
+            Dark
+          </DropdownMenuItem>
+        )}
+        {theme === "system" && systemTheme === "dark" && (
+          <DropdownMenuItem onClick={() => setTheme("light")} className="hover:underline hover:font-bold">
+            Light
+          </DropdownMenuItem>
+        )}
+        {theme === "dark" && (
+          <>
+            <DropdownMenuItem onClick={() => setTheme("system")} className="hover:underline hover:font-bold">
+              System
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setTheme("light")} className="hover:underline hover:font-bold">
+              Light
+            </DropdownMenuItem>
+          </>
+        )}
+        {theme === "light" && (
+          <>
+            <DropdownMenuItem onClick={() => setTheme("system")} className="hover:underline hover:font-bold">
+              System
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setTheme("dark")} className="hover:underline hover:font-bold">
+              Dark
+            </DropdownMenuItem>
+          </>
+        )}
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -4,85 +4,86 @@
 
 @layer base {
   :root {
-/* Light Theme */
-    --background: 216 16% 16%; /* nord0 */
-    --foreground: 218 27% 94%; /* nord6 */
-    --muted: 220 16% 22%; /* nord1 */
-    --muted-foreground: 218 27% 80%; /* nord4 */
-    --popover: 222 16% 28%; /* nord2 */
-    --popover-foreground: 218 27% 94%; /* nord6 */
-    --card: 224 16% 32%; /* nord3 */
-    --card-foreground: 218 27% 94%; /* nord6 */
+    /* Nord Light Theme */
+    --background: 220 16% 96%; /* nord6 */
+    --foreground: 220 16% 22%; /* nord1 */
+    --muted: 218 27% 94%; /* nord5 */
+    --muted-foreground: 220 16% 36%; /* nord3 */
+    --popover: 218 27% 94%; /* nord5 */
+    --popover-foreground: 220 16% 22%; /* nord1 */
+    --card: 218 27% 94%; /* nord5 */
+    --card-foreground: 220 16% 22%; /* nord1 */
     --border: 354 42% 56%; /* nord11 */
-    --input: 220 16% 22%; /* nord1 */
+    --input: 218 27% 94%; /* nord5 */
 
-    /* Primärfarbe: Nord Light Grün (Nord 14) */
+    /* Primary: Green (Nord 14) */
     --primary: 92 28% 65%; /* nord14 */
     --primary-foreground: 220 16% 22%; /* nord1 */
 
-    /* Sekundärfarbe: Rot (Nord 11) */
+    /* Secondary: Red (Nord 11) */
     --secondary: 354 42% 56%; /* nord11 */
     --secondary-foreground: 218 27% 94%; /* nord6 */
 
-    --accent: 210 34% 63%; /* nord9 */
+    --accent: 354 42% 56%; /* nord11 */
     --accent-foreground: 218 27% 94%; /* nord6 */
     --destructive: 354 42% 56%; /* nord11 */
     --destructive-foreground: 218 27% 94%; /* nord6 */
     --ring: 92 28% 65%; /* nord14 */
 
-    /* Sidebar-Anpassungen */
-    --sidebar-background: 220 16% 22%; /* nord1 */
-    --sidebar-foreground: 218 27% 80%; /* nord4 */
+    /* Sidebar Adjustments */
+    --sidebar-background: 218 27% 94%; /* nord5 */
+    --sidebar-foreground: 220 16% 36%; /* nord3 */
     --sidebar-primary: 92 28% 65%; /* nord14 */
-    --sidebar-primary-foreground: 218 27% 94%; /* nord6 */
-    --sidebar-accent: 210 34% 63%; /* nord9 */
+    --sidebar-primary-foreground: 220 16% 22%; /* nord1 */
+    --sidebar-accent: 354 42% 56%; /* nord11 */
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
-    --sidebar-border: 224 16% 32%; /* nord3 */
+    --sidebar-border: 354 42% 56%; /* nord11 */
     --sidebar-ring: 92 28% 65%; /* nord14 */
 
     --radius: 1.5rem;
   }
 
   .dark {
-    /* Dark Theme */
-    --background: 216 16% 16%; /* nord0 */
+    /* Nord Dark Theme */
+    --background: 220 16% 22%; /* nord0 */
     --foreground: 218 27% 94%; /* nord6 */
-    --muted: 220 16% 22%; /* nord1 */
+    --muted: 222 16% 28%; /* nord1 */
     --muted-foreground: 218 27% 80%; /* nord4 */
-    --popover: 222 16% 28%; /* nord2 */
+    --popover: 224 16% 32%; /* nord2 */
     --popover-foreground: 218 27% 94%; /* nord6 */
     --card: 224 16% 32%; /* nord3 */
     --card-foreground: 218 27% 94%; /* nord6 */
-    --border: 354 42% 56%; /* nord11 */
-    --input: 220 16% 22%; /* nord1 */
+    --border: 354 42% 56%; /* nord3 */
+    --input: 222 16% 28%; /* nord1 */
 
-    /* Primärfarbe: Nord Light Grün (Nord 14) */
+    /* Primary: Green (Nord 14) */
     --primary: 92 28% 65%; /* nord14 */
     --primary-foreground: 220 16% 22%; /* nord1 */
 
-    /* Sekundärfarbe: Rot (Nord 11) */
+    /* Secondary: Red (Nord 11) */
     --secondary: 354 42% 56%; /* nord11 */
     --secondary-foreground: 218 27% 94%; /* nord6 */
 
-    --accent: 210 34% 63%; /* nord9 */
+    --accent: 354 42% 56%; /* nord11 */
     --accent-foreground: 218 27% 94%; /* nord6 */
     --destructive: 354 42% 56%; /* nord11 */
     --destructive-foreground: 218 27% 94%; /* nord6 */
     --ring: 92 28% 65%; /* nord14 */
 
-    /* Sidebar-Anpassungen */
-    --sidebar-background: 220 16% 22%; /* nord1 */
+    /* Sidebar Adjustments */
+    --sidebar-background: 222 16% 28%; /* nord1 */
     --sidebar-foreground: 218 27% 80%; /* nord4 */
     --sidebar-primary: 92 28% 65%; /* nord14 */
     --sidebar-primary-foreground: 218 27% 94%; /* nord6 */
-    --sidebar-accent: 210 34% 63%; /* nord9 */
+    --sidebar-accent: 354 42% 56%; /* nord11 */
     --sidebar-accent-foreground: 218 27% 94%; /* nord6 */
-    --sidebar-border: 224 16% 32%; /* nord3 */
+    --sidebar-border: 354 42% 56%; /* nord3 */
     --sidebar-ring: 92 28% 65%; /* nord14 */
 
     --radius: 1.5rem;
   }
 }
+
 
 @font-face {
   src: url(/fonts/CaskaydiaCoveNerdFontPropo-Regular.ttf) format(truetype);

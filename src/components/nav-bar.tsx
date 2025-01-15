@@ -82,12 +82,6 @@ export function NavBar() {
                   </div>
                 </Link>
               </div>
-              <ListItem href="/blog" title="Blog">
-                Alle Blog seiten
-              </ListItem>
-              <ListItem href="/rss" title="RSS">
-                How to setup RSS feed
-              </ListItem>
               <ListItem href="/impressum" title="Impressum" />
             </div>
           </NavigationMenuContent>
